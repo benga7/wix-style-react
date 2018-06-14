@@ -45,7 +45,7 @@ class IconWithOptions extends WixComponent {
           options={dropdownLayoutOptions}
           visible={this.state.showOptions}
           onSelect={(option, isSelectedOption) => this.onSelect(option, isSelectedOption)}
-        />
+          />
       </div>
     );
   }
@@ -63,13 +63,13 @@ class IconWithOptions extends WixComponent {
         className={classes}
         style={style}
         onMouseLeave={() => this.setState({showOptions: this.props.showOptions || false})}
-      >
+        >
         {dropDirectionUp ? this.renderDropdownLayout() : null}
         <div
           data-hook="icon-wrapper"
           className={styles.iconWrapper}
           onMouseEnter={() => this.setState({showOptions: true})}
-        >
+          >
           {this.iconElement}
         </div>
         {!dropDirectionUp ? this.renderDropdownLayout() : null}
