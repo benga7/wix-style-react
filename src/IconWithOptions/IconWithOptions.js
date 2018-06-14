@@ -57,7 +57,6 @@ class IconWithOptions extends WixComponent {
       [styles.wrapper]: true,
       [styles.hover]: this.state.showOptions
     });
-    console.log('%cblabla showOptions', 'font-size:14px;background:yellow; font-weight:bold', this.state.showOptions);
 
     return (
       <div
