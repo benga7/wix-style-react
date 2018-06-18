@@ -140,8 +140,11 @@ class Notification extends WixComponent {
             css[`${theme}Theme`],
             css[`${notificationTypeToPosition[type]}Position`]
           )}
+          role="alert"
+          aria-labelledby="notification-label"
           >
           <div
+            id="notification-label"
             className={css.label}
             children={childrenComponents.label}
             />
