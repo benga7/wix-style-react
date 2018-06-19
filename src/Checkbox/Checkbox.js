@@ -21,7 +21,6 @@ class Checkbox extends WixComponent {
 
   static propTypes = {
     /** used for automatic testing */
-    active: bool,
     checked: bool,
     children: node,
     disabled: bool,
@@ -31,7 +30,7 @@ class Checkbox extends WixComponent {
 
     /** used for automatic testing */
     hover: bool,
-    size: oneOf(['medium', 'large']),
+    size: oneOf(['medium']),
     onChange: func
   };
 
@@ -53,7 +52,6 @@ class Checkbox extends WixComponent {
       disabled,
       hasError,
       hover,
-      active,
       size,
       onChange,
       children
@@ -66,7 +64,6 @@ class Checkbox extends WixComponent {
           styles.unchecked,
       {
         [styles.hover]: hover,
-        [styles.active]: active,
         [styles.disabled]: disabled,
         [styles.hasError]: hasError
       }

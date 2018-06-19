@@ -4,7 +4,7 @@
 .root {
   display: inline-block;
   outline: none;
-  
+
   label {
     display: flex;
     cursor: pointer;
@@ -16,14 +16,14 @@
     .checkbox {
       @include FocusBox;
     }
-  
-    &.hasError {  
+
+    &.hasError {
       .checkbox {
         @include FocusBoxError;
-      } 
+      }
     }
   }
-  
+
 }
 
 .children {
@@ -49,26 +49,6 @@
   min-height: 16px;
   border-radius: 4px;
   box-sizing: border-box;
-}
-
-.large {
-  width: 20px;
-  height: 20px;
-
-  .inner {
-    width: 18px;
-    height: 18px;
-
-    > svg {
-      width: 12px;
-      height: 12px;
-    }
-  }
-}
-
-.indeterminate .large .inner > svg {
-  width: 10px;
-  height: 10px;
 }
 
 .inner {
