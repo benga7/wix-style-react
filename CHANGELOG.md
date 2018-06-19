@@ -14,9 +14,44 @@ Types of changes:
 
 ## next
 
+### Fixed
+- `<Colorpicker/>` - Fix previous color (history) behavior [1823](https://github.com/wix/wix-style-react/pull/1823)
+
+## 4.3.0 - 2018-06-18
+
+### Added
+- `<TimeInput/>` - Expose isDisable mehod in it's testkit[1838](https://github.com/wix/wix-style-react/pull/1838)
+- `<LinearProgressBar>` - New component [1830](https://github.com/wix/wix-style-react/pull/1830)
+
+### Fixed
+- `<AddItem/>` - Fix styles - [1839](https://github.com/wix/wix-style-react/pull/1839)
+
+
+## 4.2.0 - 2018-06-18
+### Changed
+- `<Input/>` - select the entire text on click [#1773](https://github.com/wix/wix-style-react/pull/1773)
+- `<DataTable/>` - changed styles to new design with `newDesign` flag [#1817](https://github.com/wix/wix-style-react/pull/1817)
+
+### Added
+- `<DataTable/>` add newDesign prop [#1817](https://github.com/wix/wix-style-react/pull/1817), See [Storybook](https://wix-wix-style-react.surge.sh/?selectedKind=10.%20Tables&selectedStory=10.1%20DataTable&full=0&addons=0&stories=1&panelRight=0) for further details.
+- `<AddItem/>` - create a new component [#1802](https://github.com/wix/wix-style-react/pull/1802) [#1822](https://github.com/wix/wix-style-react/pull/1822)
+
+### Fixed
+- `<DatePicker/>` - fix css issues with latest `node-sass` version
+- `<Tooltip/>` - support React16 [#1814](https://github.com/wix/wix-style-react/pull/1814)
+- `<GoogleAddressInput>` - Fix id management issue [#1834](https://github.com/wix/wix-style-react/pull/1834)
+
+## 4.1.3 - 2018-06-12
+### Fixed
+- `<TextLink/>` - Updated disabled property behaciour [#1798](https://github.com/wix/wix-style-react/pull/1798)
+
+### Added
+- `<DataTable>` - Add info icon with tooltip to table header [#1770](https://github.com/wix/wix-style-react/pull/1770)
+
 ## 4.1.2 - 2018-06-12
 ### Added
 - `<RichTextArea/>` - add a flag to generate absolute paths url links [#1746](https://github.com/wix/wix-style-react/pull/1746)
+- `<DataTable/>` - add info icon with tooltip to table header [#1770](https://github.com/wix/wix-style-react/pull/1770)
 
 ### Fixed
 - `<TimePicker/>` - Prevent typing letters [#1751](https://github.com/wix/wix-style-react/pull/1751)
@@ -25,7 +60,6 @@ Types of changes:
 - Migrate to yoshi2 and storybook 4 [#1811](https://github.com/wix/wix-style-react/pull/1811)
 
 ## 4.1.1 - 2018-06-11
-
 ### Fixed
 - `<Input>` make ThemedInput noRight(Left)BorderRadius work. Add className prop. And fix DatePicker border. [#1794](https://github.com/wix/wix-style-react/pull/1794)
 - `<MultiSelect>` - Fix missing call to onManuallyInput when no options exists [#1804](https://github.com/wix/wix-style-react/pull/1804)

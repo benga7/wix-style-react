@@ -2,7 +2,7 @@ import React from 'react';
 import DataTable from 'wix-style-react/DataTable';
 
 const style = {
-  width: '50%'
+  width: '966px'
 };
 
 const baseData = [
@@ -17,8 +17,9 @@ class DataTableExampleWithoutHeader extends React.Component {
     return (
       <div style={style}>
         <DataTable
-          dataHook="story-data-table"
+          dataHook="story-data-table-without-header"
           hideHeader
+          newDesign
           data={baseData}
           columns={[
             {title: 'Row Number', render: (row, rowNum) => '#' + (rowNum + 1), width: '20%', minWidth: '75px', important: true},

@@ -203,14 +203,14 @@ describe('Table', () => {
       title: 'c',
       render: () => 'c',
       style: {
-        padding: '1px',
+        paddingLeft: '1px',
         height: '2px',
         width: '100px'
       }
     });
     const driver = createDriver(<DataTable {...clonedProps}/>);
     expect(driver.getCellStyle(0, 3)).toEqual(jasmine.objectContaining({
-      padding: '1px',
+      'padding-left': '1px',
       height: '2px',
       width: '100px'
     }));
@@ -351,6 +351,13 @@ describe('Table', () => {
       expect(driver.hasSortDescending(3)).toBe(true);
     });
 
+    it('should display new sort asc/desc style', () => {
+      const _props = Object.assign({}, props, {onSortClick: jest.fn()});
+      const driver = createDriver(<DataTable {..._props} newDesign/>);
+      expect(driver.hasNewSortDescending(1)).toBe(false);
+      expect(driver.hasNewSortDescending(3)).toBe(true);
+    });
+
     it('should call on sort callback', () => {
       const _props = Object.assign({}, props, {onSortClick: jest.fn()});
       const driver = createDriver(<DataTable {..._props}/>);
@@ -365,6 +372,23 @@ describe('Table', () => {
       expect(_props.onSortClick).not.toHaveBeenCalled();
     });
   });
+
+  describe('Tooltip titles', () => {
+    it('should display tooltip icon', () => {
+      const props = {
+        ...defaultProps,
+        columns: [
+          {title: 'Row Num', render: (row, rowNum) => rowNum},
+          {title: 'A', infoTooltip: {content: 'Vary informative tooltip text'}, render: row => row.a},
+          {title: 'B', render: row => row.b}
+        ]
+      };
+      const driver = createDriver(<DataTable {...props}/>);
+      expect(driver.hasInfoIcon(0)).toBe(false);
+      expect(driver.hasInfoIcon(1)).toBe(true);
+    });
+  });
+
   describe('testkit', () => {
     it('should exist', () => {
       const div = document.createElement('div');

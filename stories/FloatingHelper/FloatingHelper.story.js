@@ -34,11 +34,12 @@ export default {
         title="Don’t forget to setup payments"
         body="In order to sell your music you need to choose a payment method."
         />
-      ),
+    ),
     target: <span>I am a FloatingHelper target</span>,
     placement: 'right',
     initiallyOpened: true
   },
+
   exampleProps: {
     placement: [
       'auto-start',
@@ -56,59 +57,71 @@ export default {
       'left-end',
       'left',
       'left-start'],
+    
     target: [
       {label: 'Simple text', value: 'I am simple text target'},
       {label: 'Simple span', value: <span>I am a span target</span>}
     ],
+
     content: [
-      {label: 'with title & body only', value:
-      (
-        <FloatingHelper.Content
-          title="Don’t forget to setup payments"
-          body="In order to sell your music you need to choose a payment method."
-          />
-      )},
-      {label: 'with all items', value:
-      (
-        <FloatingHelper.Content
-          title="Don’t forget to setup payments"
-          body="In order to sell your music you need to choose a payment method."
-          actionText="Ok, Take Me There"
-          onActionClick={() => null}
-          image={<Image width="102" height="102"/>}
-          />
-      )}
+      {
+        label: 'with title & body only',
+        value: (
+          <FloatingHelper.Content
+            title="Don’t forget to setup payments"
+            body="In order to sell your music you need to choose a payment method."
+            />
+        )
+      },
+
+      {
+        label: 'with all items',
+        value: (
+          <FloatingHelper.Content
+            title="Don’t forget to setup payments"
+            body="In order to sell your music you need to choose a payment method."
+            actionText="Ok, Take Me There"
+            onActionClick={() => null}
+            image={<Image width="102" height="102"/>}
+            />
+        )
+      }
     ]
   },
-  examples:
-    (
-      <div>
-        <h1>Examples</h1>
-        <p style={{fontSize: 20}}>The content property should receive a {`<FloatingHelper.Content>`} element.
-         <br/>See story:
-         <br/><p style={{fontSize: 25, fontWeight: 'bold'}}>{helperStorySettings.story}</p>
-        </p>
-        <CodeExample title="Simple Example" code={SimpleExampleRaw}>
-          <div style={exampleWrapperStyle}>
-            <SimpleExample/>
-          </div>
-        </CodeExample >
-        <CodeExample title="Full Example" code={FullExampleRaw}>
-          <div style={exampleWrapperStyle}>
-            <FullExample/>
-          </div>
-        </CodeExample >
-        <CodeExample title="Programmatic Open Example" code={ProgrammaticExampleRaw}>
-          <div style={exampleWrapperStyle}>
-            <ProgrammaticExample/>
-          </div>
-        </CodeExample >
-        <CodeExample title="Controlled Example" code={ControlledExampleRaw}>
-          <div style={exampleWrapperStyle}>
-            <ControlledExample/>
-          </div>
-        </CodeExample >
-      </div>
-    )
 
+  examples: (
+    <div>
+      <h1>Examples</h1>
+
+      <p style={{fontSize: 20}}>The content property should receive a {`<FloatingHelper.Content>`} element.
+        <br/>See story:
+        <br/>
+        <p style={{fontSize: 25, fontWeight: 'bold'}}>{helperStorySettings.story}</p>
+      </p>
+
+      <CodeExample title="Simple Example" code={SimpleExampleRaw}>
+        <div style={exampleWrapperStyle}>
+          <SimpleExample/>
+        </div>
+      </CodeExample>
+
+      <CodeExample title="Full Example" code={FullExampleRaw}>
+        <div style={exampleWrapperStyle}>
+          <FullExample/>
+        </div>
+      </CodeExample>
+
+      <CodeExample title="Programmatic Open Example" code={ProgrammaticExampleRaw}>
+        <div style={exampleWrapperStyle}>
+          <ProgrammaticExample/>
+        </div>
+      </CodeExample>
+
+      <CodeExample title="Controlled Example" code={ControlledExampleRaw}>
+        <div style={exampleWrapperStyle}>
+          <ControlledExample/>
+        </div>
+      </CodeExample>
+    </div>
+  )
 };
