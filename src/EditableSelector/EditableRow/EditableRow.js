@@ -4,8 +4,8 @@ import WixComponent from '../../BaseComponents/WixComponent';
 import Input from '../../Input';
 import Tooltip from '../../Tooltip';
 import Button from '../../Button';
-import X from '../../Icons/dist/components/X';
-import V from '../../Icons/dist/components/V';
+import X from '../../../new-icons/X';
+import Check from '../../../new-icons/Check';
 import styles from '../EditableSelector.scss';
 
 class EditableRow extends WixComponent {
@@ -61,7 +61,7 @@ class EditableRow extends WixComponent {
             theme="dark"
             >
             <Button onClick={() => this.onCancel()} height="medium" theme="icon-standardsecondary" dataHook="edit-row-cancel-button">
-              <X size="12px"/>
+              <X/>
             </Button>
           </Tooltip>
 
@@ -71,7 +71,7 @@ class EditableRow extends WixComponent {
             theme="dark"
             >
             <Button onClick={() => this.onApprove()} height="medium" theme="icon-standard" disabled={this.state.newOption.length === 0} dataHook="edit-row-approve-button">
-              <V size="12px"/>
+              <Check/>
             </Button>
           </Tooltip>
         </div>

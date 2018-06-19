@@ -30,14 +30,14 @@ describe('Search', () => {
     expect(driver.getSearchDropdown().isDisplayed()).toBe(true);
     expect(driver.getSearchOptionsCount()).toBe(1);
     expect(driver.getSearchOptionAt(0)).toBe('fox');
-  });
+  }, {version: '<Icons/> - use new set of icons'});
 
   eyes.it('should choose one of search options', () => {
     driver.clickOnInput();
     driver.enterText('the');
     driver.clickSearchOptionAt(0);
     expect(driver.getText()).toBe('The quick');
-  });
+  }, {version: '<Icons/> - use new set of icons'});
 
   eyes.it('should clear input and show all search options after clear button click', () => {
     driver.clickOnInput();

@@ -8,7 +8,7 @@ import {
   POPOVER_MENU_DATA_HOOK,
   POPOVER_MENU_ITEM_DATA_HOOK
 } from './PopoverMenuTemplate.helpers';
-import * as Icons from 'wix-style-react/Icons';
+import * as Icons from 'wix-style-react/new-icons';
 
 class PopoverMenuTemplate extends Component {
 

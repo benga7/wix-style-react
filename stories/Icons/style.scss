@@ -17,3 +17,9 @@
 .icon-name {
   margin-left: 10px;
 }
+
+:global(.rtl) {
+  .single-icon-view svg {
+    transform: scaleX(-1);
+  }
+}

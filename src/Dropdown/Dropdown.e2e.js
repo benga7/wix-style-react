@@ -27,5 +27,5 @@ describe('Dropdown', () => {
         driver.getDropdownItem(3).click();
         expect(driver.getInput().getAttribute('value')).toBe('Option 3');
       });
-  });
+  }, {version: '<Icons/> - use new set of icons'});
 });

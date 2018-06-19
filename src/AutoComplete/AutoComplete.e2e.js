@@ -25,7 +25,7 @@ describe('AutoComplete', () => {
 
         expect(driver.getDropdownItem(0)).toBe('First option');
       });
-  });
+  }, {version: '<Icons/> - use new set of icons'});
 
   eyes.it('should choose one of autocomplete items', () => {
     const driver = autoCompleteTestkitFactory({dataHook});
@@ -39,5 +39,5 @@ describe('AutoComplete', () => {
 
         expect(driver.getInput().getAttribute('value')).toBe('Third option');
       });
-  });
+  }, {version: '<Icons/> - use new set of icons'});
 });

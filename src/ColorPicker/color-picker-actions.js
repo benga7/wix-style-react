@@ -2,18 +2,18 @@ import React from 'react';
 import {func} from 'prop-types';
 
 import Button from '../Button';
-import Close from '../Icons/dist/components/Close';
-import V from '../Icons/dist/components/V';
+import X from '../../new-icons/X';
+import Check from '../../new-icons/Check';
 
 import css from './color-picker-actions.scss';
 
 const ColorPickerActions = ({onCancel, onConfirm}) =>
   <div className={css.root}>
     <Button height="small" theme="icon-standardsecondary" onClick={onCancel}>
-      <Close size="12px"/>
+      <X/>
     </Button>
     <Button height="small" theme="icon-standard" onClick={onConfirm}>
-      <V size="12px"/>
+      <Check/>
     </Button>
   </div>;
 

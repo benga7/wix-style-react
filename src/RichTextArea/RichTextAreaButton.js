@@ -2,38 +2,38 @@ import React, {Component} from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import Tooltip from '../Tooltip';
-import Bold from './../Icons/dist/components/Bold';
-import Italic from './../Icons/dist/components/Italic';
-import Underline from './../Icons/dist/components/Underline';
-import UnorderedList from './../Icons/dist/components/UnorderedList';
-import OrderedList from './../Icons/dist/components/OrderedList';
-import Link from './../Icons/dist/components/Link';
-import Image from './../Icons/dist/components/Image';
+import TextAreaBold from './../../new-icons/system/TextAreaBold';
+import TextAreaItalic from './../../new-icons/system/TextAreaItalic';
+import TextAreaUnderline from './../../new-icons/system/TextAreaUnderline';
+import TextAreaBulletList from './../../new-icons/system/TextAreaBulletList';
+import TextAreaNumberedList from './../../new-icons/system/TextAreaNumberedList';
+import Link from './../../new-icons/Link';
+import Image from './../../new-icons/Image';
 import styles from './RichTextAreaButton.scss';
 import {withFocusable, focusableStates} from '../common/Focusable';
 const buttons = {
   bold: {
-    icon: Bold,
+    icon: TextAreaBold,
     tooltipText: 'Bold',
     size: 30
   },
   italic: {
-    icon: Italic,
+    icon: TextAreaItalic,
     tooltipText: 'Italic',
     size: 30
   },
   underline: {
-    icon: Underline,
+    icon: TextAreaUnderline,
     tooltipText: 'Underline',
     size: 30
   },
   'unordered-list': {
-    icon: UnorderedList,
+    icon: TextAreaBulletList,
     tooltipText: 'Bulletted list',
     size: 30
   },
   'ordered-list': {
-    icon: OrderedList,
+    icon: TextAreaNumberedList,
     tooltipText: 'Numbered list',
     size: 30
   },
@@ -45,7 +45,7 @@ const buttons = {
   image: {
     icon: Image,
     tooltipText: 'Image',
-    size: 14
+    size: 30
   }
 };
 

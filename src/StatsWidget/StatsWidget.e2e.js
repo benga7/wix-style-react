@@ -14,5 +14,5 @@ describe('StatsWidget', () => {
       .then(() => {
         expect(driver.numberOfStatistics()).toBe(3);
       });
-  });
+  }, {version: '<Icons/>-use new set of icons'});
 });

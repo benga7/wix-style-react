@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import PropTypes from 'prop-types';
 import reactElementToJSXString from 'react-element-to-jsx-string';
-import {Close} from 'wix-style-react/Icons';
+import {X} from 'wix-style-react/new-icons';
 import {ButtonWithOptions} from '../../src/index';
 
 export class Form extends Component {
@@ -38,12 +38,12 @@ export class Form extends Component {
           {...this.props}
           {...icons}
           >
-          {this.props.iconOnly ? <Close size={iconSize}/> : this.props.text}
+          {this.props.iconOnly ? <X size={iconSize}/> : this.props.text}
         </ButtonWithOptions.Button>
         <ButtonWithOptions.Option id="1">Option 1</ButtonWithOptions.Option>
         <ButtonWithOptions.Option id="2">Option 2</ButtonWithOptions.Option>
         <ButtonWithOptions.Option id="3" disabled>Option 3</ButtonWithOptions.Option>
-        <ButtonWithOptions.Option id="4"><span><Close size={iconSize}/> Option 4</span></ButtonWithOptions.Option>
+        <ButtonWithOptions.Option id="4"><span><X size={iconSize}/> Option 4</span></ButtonWithOptions.Option>
         <ButtonWithOptions.Option id="5">Option 5</ButtonWithOptions.Option>
       </ButtonWithOptions>
     );

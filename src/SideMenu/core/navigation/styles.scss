@@ -11,7 +11,8 @@ $padding-vertical: 14px;
 }
 
 .link-base {
-  display: block;
+  display: flex;
+  align-items: center;
   padding: $padding-vertical $padding-horizontal;
   transition: .2s ease all;
   color: $D80;
@@ -87,15 +88,10 @@ $padding-vertical: 14px;
 .linkArrow {
   position: absolute;
   right: 25px;
-  top: 16px;
+  top: 8px;
   opacity: 0;
   font-size: 10px;
   transition: 0.5s;
-
-  > svg {
-    display: block;
-    transform: scale(2.6);
-  }
 }
 
 .separator {
@@ -123,11 +119,8 @@ $padding-vertical: 14px;
   display: inline-block;
   vertical-align: middle;
   transition: transform 0.5s;
-
-  > svg {
-    display: block;
-    transform: scale(2);
-  }
+  top: 1px;
+  position: relative;
 }
 
 .backLabel {
@@ -157,6 +150,4 @@ $padding-vertical: 14px;
   padding: 17px 26px;
   top: 0;
   right:0;
-
-
 }

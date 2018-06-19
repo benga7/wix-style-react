@@ -5,7 +5,7 @@ import WixComponent from '../BaseComponents/WixComponent';
 import styles from './StatsWidget.scss';
 import Text from '../Deprecated/Text';
 import classnames from 'classnames';
-import ArrowVertical from '../Icons/dist/components/ArrowVertical';
+import SortByArrowUp from '../../new-icons/system/SortByArrowUp';
 import ButtonWithOptions from '../ButtonWithOptions';
 
 /**
@@ -36,15 +36,17 @@ class StatsWidget extends WixComponent {
   };
 
   _renderPercentage(percent) {
-    return (<Text appearance="H3">
-      <div
-        className={classnames(styles.percents, {[styles.isNegative]: percent < 0}, {[styles.isPositive]: percent > 0})}
-        data-hook="percent-wrapper"
-        >
-        <span className={classnames(styles.percentArrow)}><ArrowVertical/></span>
-        <span data-hook="percent-value">{Math.abs(percent)}%</span>
-      </div>
-    </Text>);
+    return (
+      <Text appearance="H3">
+        <div
+          className={classnames(styles.percents, {[styles.isNegative]: percent < 0}, {[styles.isPositive]: percent > 0})}
+          data-hook="percent-wrapper"
+          >
+          <span className={classnames(styles.percentArrow)}><SortByArrowUp/></span>
+          <span data-hook="percent-value">{Math.abs(percent)}%</span>
+        </div>
+      </Text>
+    );
   }
 
   _renderColumn(statistics, index) {

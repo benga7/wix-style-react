@@ -1,9 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import CloseThin from './../Icons/dist/components/CloseThin';
-import ArrowDownThin from './../Icons/dist/components/ArrowDownThin';
-import Search4 from './../Icons/dist/components/Search4';
+import X from './../../new-icons/X';
+import ChevronDown from './../../new-icons/ChevronDown';
+import Search from './../../new-icons/Search';
 import ThemedInputErrorSuffix from './ThemedInputErrorSuffix';
 import ThemedInputHelpSuffix from './ThemedInputHelpSuffix';
 
@@ -45,14 +45,14 @@ const InputSuffix = ({theme, errorMessage, error, disabled, help, helpMessage, o
     {
       component: () =>
         <div className={styles.magnifyingGlass} disabled={disabled} onClick={onIconClicked}>
-          <Search4 size={'18px'}/>
+          <Search/>
         </div>,
       isVisible: suffixRules.magnifyingGlass({magnifyingGlass, isClearButtonVisible, error})
     },
     {
       component: () =>
         <div onClick={onClear} className={styles.clearButton} data-hook="input-clear-button">
-          <CloseThin size="8px"/>
+          <X/>
         </div>,
       isVisible: suffixRules.clearButton({isClearButtonVisible})
     },
@@ -71,7 +71,7 @@ const InputSuffix = ({theme, errorMessage, error, disabled, help, helpMessage, o
     {
       component: () =>
         <div className={styles.menuArrow} disabled={disabled} onClick={onIconClicked}>
-          <ArrowDownThin size={'0.6em'}/>
+          <ChevronDown/>
         </div>,
       isVisible: suffixRules.menuArrow({menuArrow, isClearButtonVisible, magnifyingGlass})
     }

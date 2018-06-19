@@ -6,16 +6,16 @@ import {
 } from 'wix-style-react';
 
 import {
-  Help as HelpIcon,
+  InfoCircle as HelpIcon,
   Chat as ChatIcon,
-  Trash3 as TrashIcon
-} from 'wix-style-react/Icons';
+  Delete as TrashIcon
+} from 'wix-style-react/new-icons';
 
 export default () =>
   <div style={{width: 220, height: 700}}>
     <SideMenu>
       <SideMenu.Header onClick={() => console.log('Header clicked')}>
-        <TrashIcon size="5em"/>
+        <TrashIcon/>
         <h2 style={{color: '#fff'}}>My Application</h2>
       </SideMenu.Header>
 
@@ -55,7 +55,7 @@ export default () =>
         <SideMenu.FooterLink
           href="https://support.wix.com/"
           target="_blank"
-          icon={<HelpIcon size="1em"/>}
+          icon={<HelpIcon/>}
           >
           Help Me!
         </SideMenu.FooterLink>
@@ -63,7 +63,7 @@ export default () =>
         <SideMenu.FooterTinyLink
           href="https://support.wix.com/en/article/wix-seo-wiz-suggestions-and-feedback"
           target="_blank"
-          icon={<div style={{marginTop: 2}}><ChatIcon size="1em"/></div>}
+          icon={<div style={{marginTop: 2}}><ChatIcon/></div>}
           tooltip="Hey, come talk to me!"
           onClick={() => console.log('clicked on tiny link yay!')}
           />

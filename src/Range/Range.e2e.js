@@ -54,19 +54,19 @@ describe('Range', () => {
     eyes.it('should have default props', async () => {
       expect(driver.isFocusedFirst()).toBe(false, 'isFocused');
       expect(driver.isFocusedLast()).toBe(false, 'isFocused');
-    });
+    }, {version: '<Icons/> - use new set of icons'});
 
     eyes.it('should show focused styles for first item', async () => {
       expect(driver.isFocusedFirst()).toBe(false);
       await driver.clickFirst();
       expect(driver.isFocusedFirst()).toBe(true);
-    });
+    }, {version: '<Icons/> - use new set of icons'});
 
     eyes.it('should show focused styles for last item', async () => {
       expect(driver.isFocusedLast()).toBe(false);
       await driver.clickLast();
       expect(driver.isFocusedLast()).toBe(true);
-    });
+    }, {version: '<Icons/> - use new set of icons'});
   });
 
   describe('DatePicker type', () => {
@@ -74,20 +74,20 @@ describe('Range', () => {
     eyes.it('should have default props', async () => {
       expect(driver.isFocusedFirst()).toBe(false, 'isFocusedFirst');
       expect(driver.isFocusedLast()).toBe(false, 'isFocusedLast');
-    });
+    }, {version: '<Icons/> - use new set of icons'});
 
     eyes.it('should show focused styles for first item', async () => {
       expect(driver.isFocusedFirst()).toBe(false);
       await driver.clickFirst();
       expect(driver.isFocusedFirst()).toBe(true);
-    }, {version: '<Input/>-On text click - select all'});
+    }, {version: '<Icons /> - use new set of icons'});
 
     eyes.it('should show focused styles for last item', async () => {
       expect(driver.isFocusedLast()).toBe(false);
       await driver.clickLast();
       await driver.clickLast(); // TODO: temporary :)
       expect(driver.isFocusedLast()).toBe(true);
-    });
+    }, {version: '<Icons/> - use new set of icons'});
   });
 });
 

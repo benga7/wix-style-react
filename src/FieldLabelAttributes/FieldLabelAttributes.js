@@ -3,7 +3,7 @@ import {bool, node} from 'prop-types';
 import styles from './FieldLabelAttributes.scss';
 import WixComponent from '../BaseComponents/WixComponent';
 import Tooltip from '../Tooltip';
-import Info2 from '../Icons/dist/components/Info2';
+import InfoCircle from '../../new-icons/InfoCircle';
 
 class FieldLabelAttributes extends WixComponent {
   static tooltipDefaultProps = {
@@ -16,7 +16,7 @@ class FieldLabelAttributes extends WixComponent {
       data-hook="info"
       className={styles.icon}
       >
-      <Info2 size="18px"/>
+      <InfoCircle/>
     </span>;
 
 

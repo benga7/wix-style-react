@@ -2,7 +2,7 @@ import React from 'react';
 import {Container, AutoAdjustedRow, Card} from '../../src/Grid';
 import styles from './ExampleGrid.scss';
 
-import {Plus} from 'wix-style-react/Icons';
+import {Add} from 'wix-style-react/new-icons';
 import Tooltip from '../../src/Tooltip';
 
 export default () =>
@@ -16,7 +16,7 @@ export default () =>
             buttonOnClick={() => {
               alert('Clicked!');
             }}
-            buttonPrefix={<Plus/>}
+            buttonPrefix={<Add/>}
             buttonTitle="Tooltip button!"
             />
           <Card.Content>Here comes some AMAZING content that will blow your mind.
@@ -29,7 +29,7 @@ export default () =>
             buttonOnClick={() => {
               alert('Clicked!');
             }}
-            buttonPrefix={<Plus/>}
+            buttonPrefix={<Add/>}
             buttonTitle="Tooltip button!"
             />
         </Card>

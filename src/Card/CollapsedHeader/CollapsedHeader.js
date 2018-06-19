@@ -6,8 +6,8 @@ import Switch from '../../../src/ToggleSwitch';
 import WixComponent from '../../../src/BaseComponents/WixComponent';
 import Collapse from 'react-collapse';
 import Button from '../../../src/Button';
-import ArrowDownThin from '../../../src/Icons/dist/components/ArrowDownThin';
-import ArrowUpThin from '../../../src/Icons/dist/components/ArrowUpThin';
+import ChevronDown from '../../../new-icons/ChevronDown';
+import ChevronUp from '../../../new-icons/ChevronUp';
 
 class CollapsedHeader extends WixComponent {
   static propTypes = {
@@ -93,7 +93,7 @@ class CollapsedHeader extends WixComponent {
         <Button
           dataHook="button"
           height="medium"
-          prefixIcon={this.state.isCollapsed ? <ArrowDownThin/> : <ArrowUpThin/>}
+          prefixIcon={this.state.isCollapsed ? <ChevronDown/> : <ChevronUp/>}
           onClick={this.onToggleChange}
           theme="whiteblueprimary"
           type="button"

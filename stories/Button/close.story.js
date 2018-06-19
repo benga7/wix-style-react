@@ -2,7 +2,7 @@ import React from 'react';
 
 import Button from 'wix-style-react/Button';
 
-import * as Icons from 'wix-style-react/Icons';
+import * as Icons from 'wix-style-react/new-icons';
 
 const icons = Object.values(Icons).map(icon => React.createElement(icon));
 
@@ -14,7 +14,7 @@ export default {
 
   componentProps: {
     theme: 'close-standard',
-    children: <Icons.Close size="6px"/>
+    children: <Icons.X/>
   },
 
   exampleProps: {

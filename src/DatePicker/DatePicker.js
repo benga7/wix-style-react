@@ -19,7 +19,7 @@ import setMonth from 'date-fns/set_month';
 import setDate from 'date-fns/set_date';
 
 import WixComponent from '../BaseComponents/WixComponent';
-import CalendarIcon from '../Icons/dist/components/Calendar';
+import CalendarIcon from '../../new-icons/Date';
 import localeUtilsFactory, {formatDate} from './LocaleUtils';
 
 import styles from './DatePicker.scss';

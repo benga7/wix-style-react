@@ -20,7 +20,7 @@
   cursor: pointer;
   font: inherit;
   outline: none;
-  align-items: flex-start;
+  align-items: center;
 
   &:hover {
     span,
@@ -34,7 +34,6 @@
   display: flex;
   align-items: center;
   margin-right: 6px;
-  margin-top: 2px;
 
   svg {
     vertical-align: middle;

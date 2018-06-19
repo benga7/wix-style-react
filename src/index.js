@@ -52,7 +52,7 @@ export {default as Breadcrumbs} from './Breadcrumbs';
 export {default as ImageViewer} from './ImageViewer';
 export {default as PopoverMenu} from './PopoverMenu';
 export {default as PopoverMenuItem} from './PopoverMenuItem';
-export {default as Icons} from './Icons';
+export {default as Icons} from './new-icons';
 export {default as Badge} from './Badge';
 export {default as EditableSelector} from './EditableSelector';
 export {default as StatsWidget} from './StatsWidget';

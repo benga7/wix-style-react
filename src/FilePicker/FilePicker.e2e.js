@@ -20,5 +20,5 @@ describe('FilePicker', () => {
         driver.getInput().sendKeys(absolutePath);
         expect(driver.getSubLabel()).toBe('surf-musa.png');
       });
-  });
+  }, {version: '<Icons/> - use new set of icons'});
 });

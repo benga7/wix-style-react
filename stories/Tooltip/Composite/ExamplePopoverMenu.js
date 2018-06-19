@@ -18,9 +18,9 @@ class ExamplePopoverMenu extends Component {
     size: 'normal',
     placement: 'top',
     menuItems: [
-      {iconName: 'PenOutline', text: 'Edit'},
-      {iconName: 'VisibilityHidden', text: 'Hide'},
-      {iconName: 'Trash3', text: 'Delete'}
+      {iconName: 'Edit', text: 'Edit'},
+      {iconName: 'Hidden', text: 'Hide'},
+      {iconName: 'Delete', text: 'Delete'}
     ],
     buttonTheme: 'icon-greybackground',
     maxWidth: '378px'

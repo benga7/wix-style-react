@@ -19,5 +19,5 @@ describe('IconWithOptions', () => {
         driver.getDropdownItem(1).click();
         expect(driver.getDropdown().isDisplayed()).toBe(true);
       });
-  });
+  }, {version: '<Icons/> - use new set of icons'});
 });

@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import Tooltip from '../Tooltip';
 import InputHelpSuffix from './InputHelpSuffix';
 
-import InfoMaterial from '../Icons/dist/components/InfoMaterial';
+import InfoCircle from '../../new-icons/InfoCircle';
 import styles from './Input.scss';
 
 const placementToMoveBy = {
@@ -28,7 +28,7 @@ const AmaterialHelpSuffix = ({help, helpMessage, placement, onShow}) =>
     overlay=""
     onShow={onShow}
     >
-    <div className={styles.amaterialHelp}><InfoMaterial height="30" width="30"/></div>
+    <div className={styles.amaterialHelp}><InfoCircle height="30" width="30"/></div>
   </Tooltip>;
 
 AmaterialHelpSuffix.propTypes = {

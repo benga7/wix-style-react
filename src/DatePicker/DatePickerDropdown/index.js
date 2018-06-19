@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 import DropdownLayout from '../../DropdownLayout';
 import Text from '../../Deprecated/Text';
-import ArrowDownThin from '../../Icons/dist/components/ArrowDownThin';
+import ChevronDown from '../../../new-icons/ChevronDown';
 import styles from './styles.scss';
 
 export default class DropdownPicker extends React.Component {
@@ -63,7 +63,7 @@ export default class DropdownPicker extends React.Component {
             />
 
           <div className={styles.icon}>
-            <ArrowDownThin/>
+            <ChevronDown/>
           </div>
         </div>
 

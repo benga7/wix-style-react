@@ -7,9 +7,9 @@ import omit from 'omit';
 import {withFocusable, focusableStates} from '../../common/Focusable';
 
 const ICON_SIZES = {
-  'x-small': '8px',
-  small: '8px',
-  medium: '12px'
+  'x-small': '12px',
+  small: '18px',
+  medium: '24px'
 };
 
 class Button extends WixComponent {

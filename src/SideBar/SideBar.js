@@ -6,7 +6,7 @@ import Menu from './Menu';
 
 class SideBar extends React.Component {
 
-  static displayName: 'SideBar'
+  static displayName = 'SideBar'
 
   render() {
     return (

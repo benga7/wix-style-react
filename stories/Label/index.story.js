@@ -2,7 +2,7 @@ import React from 'react';
 
 import CodeExample from 'wix-storybook-utils/CodeExample';
 
-import {Image} from 'wix-style-react/Icons';
+import {Image} from 'wix-style-react/new-icons';
 import Label from 'wix-style-react/Label';
 
 import ExampleStandard from './ExampleStandard';

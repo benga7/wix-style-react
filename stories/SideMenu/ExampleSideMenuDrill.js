@@ -6,10 +6,10 @@ import {
   Tooltip
 } from 'wix-style-react';
 import {
-  Help as HelpIcon,
+  InfoCircle as HelpIcon,
   Chat as ChatIcon,
-  Trash3 as TrashIcon
-} from 'wix-style-react/Icons';
+  Delete as TrashIcon
+} from 'wix-style-react/new-icons';
 let counter = 3;
 
 const items = [
@@ -98,7 +98,7 @@ class ExampleSideMenuDrill extends React.Component {
         >
         <SideMenu.Header>
           <div onClick={() => console.log('Header clicked')}>
-            <TrashIcon size="5em"/>
+            <TrashIcon/>
             <h2 style={{color: '#fff'}}>Internal App</h2>
           </div>
         </SideMenu.Header>
@@ -136,7 +136,7 @@ class ExampleSideMenuDrill extends React.Component {
         <SideMenu.FooterLink
           href="https://support.wix.com/"
           target="_blank"
-          icon={<HelpIcon size="1em"/>}
+          icon={<HelpIcon/>}
           >
           Help Me!
         </SideMenu.FooterLink>
@@ -144,7 +144,7 @@ class ExampleSideMenuDrill extends React.Component {
         <SideMenu.FooterTinyLink
           href="https://support.wix.com/en/article/wix-seo-wiz-suggestions-and-feedback"
           target="_blank"
-          icon={<div style={{marginTop: 2}}><ChatIcon size="1em"/></div>}
+          icon={<div style={{marginTop: 2}}><ChatIcon/></div>}
           tooltip="Hey, come talk to me!"
           onClick={() => console.log('clicked on tiny link yay!')}
           />
@@ -161,7 +161,7 @@ class ExampleSideMenuDrill extends React.Component {
           <SideMenuDrill inFlex stickyFooter={this.renderFooter()}>
             <SideMenu.Header>
               <div onClick={() => console.log('Header clicked')}>
-                <TrashIcon size="5em"/>
+                <TrashIcon/>
                 <h2 style={{color: '#fff'}}>My Application</h2>
               </div>
             </SideMenu.Header>

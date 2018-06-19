@@ -17,7 +17,7 @@ describe('MultiSelectCheckbox', () => {
     driver.selectItemById('California');
 
     expect(driver.getInput().getAttribute('value')).toBe('Arkansas, California');
-  });
+  }, {version: '<Icons/> - use new set of icons'});
 
 
   eyes.it('should open or close drop down when clicking on the input', async () => {
@@ -28,6 +28,6 @@ describe('MultiSelectCheckbox', () => {
 
     driver.clickInput();
     expect(driver.getDropdown().isDisplayed()).toBe(false);
-  });
+  }, {version: '<Icons/> - use new set of icons'});
 
 });

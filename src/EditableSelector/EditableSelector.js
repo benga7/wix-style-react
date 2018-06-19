@@ -6,8 +6,8 @@ import Text from '../Deprecated/Text';
 import ButtonWithOptions from '../ButtonWithOptions/ButtonWithOptions';
 import EditableRow from './EditableRow/EditableRow';
 import styles from './EditableSelector.scss';
-import Plus2 from '../Icons/dist/components/Plus2';
-import Trash3 from '../Icons/dist/components/Trash3';
+import Add from '../../new-icons/Add';
+import Delete from '../../new-icons/Delete';
 
 class EditableSelector extends WixComponent {
   static propTypes = {
@@ -106,7 +106,7 @@ class EditableSelector extends WixComponent {
                 />
               <div className={styles.optionMenu}>
                 <ButtonWithOptions.Button onClick={() => this.deleteItem(index)} dataHook="delete-item" type="button" height="small" theme="icon-greybackground">
-                  <Trash3 size="15px"/>
+                  <Delete/>
                 </ButtonWithOptions.Button>
                 <ButtonWithOptions.Button onClick={() => this.editItem(index)} dataHook="edit-item" height="small" theme="fullblue">
                   {editButtonText}
@@ -118,8 +118,10 @@ class EditableSelector extends WixComponent {
         {this.state.addingNewRow && this.renderInput()}
         <div className={styles.newRowButton} onClick={() => this.addNewRow()} data-hook="new-row-button">
           <Text appearance="T1.3">
-            <Plus2 size="13px"/>
-            <span data-hook="new-row-button-text" className={styles.text}>{newRowLabel}</span>
+            <span className={styles.newRowText}>
+              <Add/>
+              <span data-hook="new-row-button-text" className={styles.text}>{newRowLabel}</span>
+            </span>
           </Text>
         </div>
       </div>

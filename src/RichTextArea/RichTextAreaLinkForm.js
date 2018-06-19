@@ -2,8 +2,8 @@ import React, {Component} from 'react';
 import PropTypes from 'prop-types';
 import TextField from '../TextField';
 import Button from '../Button';
-import Close from '../Icons/dist/components/Close';
-import Check from '../Icons/dist/components/Check';
+import X from '../../new-icons/X';
+import Check from '../../new-icons/Check';
 import Input from '../Input';
 import styles from './RichTextAreaLinkForm.scss';
 
@@ -39,12 +39,12 @@ class RichTextAreaLinkForm extends Component {
         <div className={styles.buttons}>
           <span className={styles.button}>
             <Button theme="icon-standardsecondary" onClick={this.props.onCancel} height="small" type="button">
-              <Close width="11" height="11"/>
+              <X/>
             </Button>
           </span>
           <span className={styles.button}>
             <Button theme="icon-standard" height="small" type="submit" disabled={!this.state.href}>
-              <Check width="10" height="12"/>
+              <Check/>
             </Button>
           </span>
         </div>

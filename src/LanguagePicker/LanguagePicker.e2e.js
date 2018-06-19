@@ -16,5 +16,5 @@ describe('LanguagePicker', () => {
         driver.getDropdownItem(2).click();
         expect($('#languagePicker-output').getText()).toBe('Hej');
       });
-  });
+  }, {version: '<Icons/> - use new set of icons'});
 });

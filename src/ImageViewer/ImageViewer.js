@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import classNames from 'classnames';
 import style from './ImageViewer.scss';
 import Tooltip from '../Tooltip';
 import Button from '../Button';
@@ -7,13 +8,11 @@ import Delete from 'wix-ui-icons-common/Delete';
 import Replace from 'wix-ui-icons-common/Replace';
 import WixComponent from '../BaseComponents/WixComponent';
 import FormFieldError from 'wix-ui-icons-common/system/FormFieldError';
-import classNames from 'classnames';
 import AddItem from '../AddItem/AddItem';
 
 class ImageViewer extends WixComponent {
 
   render() {
-
     const {
       imageUrl,
       onAddImage,
@@ -51,7 +50,7 @@ class ImageViewer extends WixComponent {
               </Tooltip>
               <Tooltip content="Remove" {...tooltipCommonProps}>
                 <Button dataHook="remove-image" theme="icon-whitesecondary" onClick={onRemoveImage}>
-                  <Delete size="1.5em"/>
+                  <Delete/>
                 </Button>
               </Tooltip>
             </div>

@@ -1,6 +1,6 @@
 import React from 'react';
 import IconWithOptions from 'wix-style-react/IconWithOptions';
-import {Image} from 'wix-style-react/Icons';
+import {Image} from 'wix-style-react/new-icons';
 
 const style = {
   display: 'inline-block',
@@ -41,7 +41,7 @@ class Example extends React.Component {
   render() {
     return (
       <IconWithOptions dataHook="story-iconWithOptions" onSelect={this.onSelect} selectedId={this.state.selectedId}>
-        <IconWithOptions.Icon><Image size="30"/></IconWithOptions.Icon>
+        <IconWithOptions.Icon><Image/></IconWithOptions.Icon>
         {optionsToArray(options)}
       </IconWithOptions>
     );

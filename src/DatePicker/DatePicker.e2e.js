@@ -19,7 +19,7 @@ describe('DatePicker', () => {
     inputDriver.click();
 
     expect(calendarDriver.exists()).toBe(false);
-  });
+  }, {version: '<Icons/> - use new set of icons'});
 
   eyes.it('should not close calendar on selecting date with click when shouldCloseOnSelect prop set to false', () => {
     autoExampleDriver.setProps({shouldCloseOnSelect: false});
@@ -29,24 +29,24 @@ describe('DatePicker', () => {
 
     expect(calendarDriver.exists()).toBe(true);
     expect(calendarDriver.isVisible()).toBe(true);
-  });
+  }, {version: '<Icons/> - use new set of icons'});
 
   describe('default', () => {
     eyes.it('should show inputDriver', () => {
       expect(inputDriver.isVisible()).toBe(true);
-    });
+    }, {version: '<Icons/> - use new set of icons'});
 
     eyes.it('should open calendar when click on inputDriver', () => {
       inputDriver.click();
       expect(calendarDriver.exists()).toBe(true);
       expect(calendarDriver.isVisible()).toBe(true);
-    }, {version: '<Input/> - On text click - select all'});
+    }, {version: '<Icons /> - use new set of icons'});
 
     eyes.it('should close calendar on selecting date with click', () => {
       inputDriver.click();
       calendarDriver.clickOnNthAvailableDay(1);
       expect(calendarDriver.exists()).toBe(false);
-    });
+    }, {version: '<Icons/> - use new set of icons'});
 
     eyes.it('should close calendar on Escape key', () => {
       inputDriver.click();
@@ -54,7 +54,7 @@ describe('DatePicker', () => {
 
       inputDriver.pressEscKey();
       expect(calendarDriver.exists()).toBe(false);
-    }, {version: '<Input/> - On text click - select all'});
+    }, {version: '<Icons /> - use new set of icons'});
 
     eyes.it('should close calendar on Tab key', () => {
       inputDriver.click();
@@ -62,7 +62,7 @@ describe('DatePicker', () => {
 
       inputDriver.pressTabKey();
       expect(calendarDriver.exists()).toBe(false);
-    });
+    }, {version: '<Icons/> - use new set of icons'});
 
     eyes.it('should not change date', () => {
       autoExampleDriver.setProps({value: new Date('2017/05/01')});
@@ -70,7 +70,7 @@ describe('DatePicker', () => {
       inputDriver.pressEnterKey();
 
       expect(inputDriver.getValue()).toBe('2017/05/01');
-    }, {version: '<Input/> - On text click - select all'});
+    }, {version: '<Icons /> - use new set of icons'});
 
     eyes.it('should select next day date', () => {
       autoExampleDriver.setProps({value: new Date('2017/05/01')});
@@ -79,7 +79,7 @@ describe('DatePicker', () => {
       inputDriver.pressEnterKey();
 
       expect(inputDriver.getValue()).toBe('2017/05/02');
-    });
+    }, {version: '<Icons/> - use new set of icons'});
   });
 
   describe('with year and month dropdown', () => {
@@ -95,7 +95,7 @@ describe('DatePicker', () => {
       inputDriver.click();
       calendarDriver.openYearDropdownOptions();
       expect(calendarDriver.isYearInViewPort('2017')).toBeTruthy();
-    });
+    }, {version: '<Icons/> - use new set of icons'});
 
     eyes.it('should select 2027 year', () => {
       inputDriver.click();
@@ -105,7 +105,7 @@ describe('DatePicker', () => {
       calendarDriver.clickOnNthAvailableDay();
 
       expect(inputDriver.getValue()).toBe('2027/05/01');
-    });
+    }, {version: '<Icons/> - use new set of icons'});
 
     eyes.it('should select February', () => {
       inputDriver.click();
@@ -115,7 +115,7 @@ describe('DatePicker', () => {
       calendarDriver.clickOnNthAvailableDay();
 
       expect(inputDriver.getValue()).toBe('2017/02/01');
-    });
+    }, {version: '<Icons/> - use new set of icons'});
 
     eyes.it('should select February and 2026 year', () => {
       inputDriver.click();
@@ -127,6 +127,6 @@ describe('DatePicker', () => {
       calendarDriver.clickOnNthAvailableDay();
 
       expect(inputDriver.getValue()).toBe('2026/02/01');
-    });
+    }, {version: '<Icons/> - use new set of icons'});
   });
 });

@@ -30,14 +30,14 @@ describe('RichTextArea', () => {
     for (let index = 0; index < BUTTON_TYPES.length; index++) {
       expect(richTextAreaTestkit.isButtonFocused(index)).toBe(false, 'isButtonFocused');
     }
-  });
+  }, {version: '<Icons/> - use new set of icons'});
 
   describe('Focus', () => {
     eyes.it('should show focus styles for editor', async () => {
       expect(await richTextAreaTestkit.isEditorFocused()).toBe(false);
       await focusEditor();
       expect(await richTextAreaTestkit.isEditorFocused()).toBe(true);
-    });
+    }, {version: '<Icons/> - use new set of icons'});
 
     eyes.it('should show focus styles when navigated by keyboard', async () => {
       // TODO: replace with forEachAsync
@@ -53,7 +53,7 @@ describe('RichTextArea', () => {
         expect(await buttonDriver.hasFocusVisibleState()).toBe(true, `${type} - after - hasFocusVisibleState`);
         await eyes.checkWindow(`${type} button with focus-visible`);
       }
-    });
+    }, {version: '<Icons/> - use new set of icons'});
 
     it('should NOT show focus styles when clicking buttons by mouse', async () => {
       // TODO: replace with forEachAsync
@@ -144,7 +144,7 @@ describe('RichTextArea', () => {
       expect(await richTextAreaTestkit.isEditorFocused()).toBe(false);
       await focusEditor();
       expect(await richTextAreaTestkit.isEditorFocused()).toBe(true);
-    });
+    }, {version: '<Icons/> - use new set of icons'});
 
     eyes.it('should show focus styles for each button', async () => {
       // TODO: replace with forEachAsync
@@ -155,7 +155,7 @@ describe('RichTextArea', () => {
         expect(await richTextAreaTestkit.isButtonFocused(index)).toBe(true);
         await eyes.checkWindow(`Button ${type}`);
       }
-    });
+    }, {version: '<Icons/> - use new set of icons'});
   });
 
 });

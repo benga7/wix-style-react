@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import Tooltip from '../Tooltip';
-import Help from '../Icons/dist/components/Help';
+import InfoCircle from '../../new-icons/InfoCircle';
 import styles from './Input.scss';
 
 class InputHelpSuffix extends React.Component {
@@ -19,7 +19,7 @@ class InputHelpSuffix extends React.Component {
         content={this.props.helpMessage}
         overlay=""
         >
-        <div className={styles.help}><Help height="20" width="20"/></div>
+        <div className={styles.help}><InfoCircle height="20" width="20"/></div>
       </Tooltip>
     );
   }

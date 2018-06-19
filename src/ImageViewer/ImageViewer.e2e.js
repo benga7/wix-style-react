@@ -13,5 +13,5 @@ describe('ImageViewer', () => {
       .then(() => {
         driver.click();
       });
-  });
+  }, {version: '<Icons/> -use new set of icons'});
 });

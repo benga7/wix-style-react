@@ -17,5 +17,5 @@ describe('DrillView', () => {
     await driver.clickBackLink();
     await browser.wait(async () => await driver.hasSingleDrillViewPanel());
     await browser.wait(async () => await driver.hasNoTransitionClassesInDrillView());
-  });
+  }, {version: '<Icons/> - use new set of icons'});
 });

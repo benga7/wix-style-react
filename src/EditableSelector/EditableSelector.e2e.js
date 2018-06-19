@@ -16,7 +16,7 @@ describe('EditableSelector', () => {
     .then(() => {
       expect(driver.title().getText()).toBe('Type of Seeds');
     });
-  });
+  }, {version: '<Icons/> - use new set of icons'});
 
 
   eyes.it('should create a new option', async () => {
@@ -27,7 +27,7 @@ describe('EditableSelector', () => {
       await driver.clickApprove();
       expect(await driver.item(2).getText()).toBe(newOption);
     });
-  });
+  }, {version: '<Icons/> - use new set of icons'});
 
   // No eyes: I don't think eyes is needed here. It fails for unknown reason.
   // The snapshot used to include the edit button (which is visible on hover only)
@@ -50,7 +50,7 @@ describe('EditableSelector', () => {
       await driver.clickApprove();
       expect(await driver.item(1).getText()).toBe(newOption);
     });
-  });
+  }, {version: '<Icons/> - use new set of icons'});
 
   eyes.it('should select an option when clicked', async () => {
     await waitForVisibilityOf(driver.element(), 'Cannot find EditableSelector')
@@ -58,7 +58,7 @@ describe('EditableSelector', () => {
       await driver.toggleItem(0);
       expect(await driver.isSelected(0)).toBe(true);
     });
-  });
+  }, {version: '<Icons/> - use new set of icons'});
 
   eyes.it('should delete an option', async () => {
     await waitForVisibilityOf(driver.element(), 'Cannot find EditableSelector')
@@ -66,5 +66,5 @@ describe('EditableSelector', () => {
       await driver.deleteRow(1);
       await expect(driver.items().count()).toBe(1);
     });
-  });
+  }, {version: '<Icons/> - use new set of icons'});
 });

@@ -3,7 +3,7 @@ import {storiesOf} from '@storybook/react';
 import Markdown from 'wix-storybook-utils/Markdown';
 import CodeExample from 'wix-storybook-utils/CodeExample';
 
-import Readme from '../../src/Icons/README.md';
+import Readme from '../../src/new-icons/README.md';
 
 import AllIcons from './AllIcons';
 import AllIconsRaw from '!raw-loader!./AllIcons';

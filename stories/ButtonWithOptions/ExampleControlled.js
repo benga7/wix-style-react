@@ -1,6 +1,6 @@
 import React from 'react';
 import ButtonWithOptions from 'wix-style-react/ButtonWithOptions';
-import {Close} from '../../src/Icons/dist/index';
+import {X} from 'wix-style-react/new-icons';
 
 const style = {
   display: 'inline-block',
@@ -59,7 +59,7 @@ class ControlledInputWithOptions extends React.Component {
           height="medium"
           theme="icon-standard"
           >
-          <Close size="12px"/>
+          <X/>
         </ButtonWithOptions.Button>
         {createOptions(options.filter(predicate))}
       </ButtonWithOptions>

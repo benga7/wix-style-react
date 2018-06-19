@@ -1,5 +1,5 @@
 import React from 'react';
-import {Email} from 'wix-style-react/Icons';
+import {Email} from 'wix-style-react/new-icons';
 import DropdownComposite from '../../src/DropdownComposite';
 import Dropdown from '../../src/Dropdown';
 import Label from '../../src/Label';

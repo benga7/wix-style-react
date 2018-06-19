@@ -5,7 +5,7 @@ import classnames from 'classnames';
 import styles from './Modal.scss';
 import {colors, flexPositions, positions} from './ModalConstants';
 import WixComponent from '../BaseComponents/WixComponent';
-import CloseThin from './../Icons/dist/components/CloseThin';
+import X from './../../new-icons/X';
 
 const CHILDREN_WRAPPER_DIV_ID = 'modal-children-container';
 
@@ -163,7 +163,7 @@ class Modal extends WixComponent {
         className={styles.closeButton}
         data-hook="modal-close-button"
         >
-        <CloseThin size="18px"/>
+        <X/>
       </div>
     );
   };

@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styles from './FilePicker.scss';
 import WixComponent from '../BaseComponents/WixComponent';
-import Add from '../Icons/dist/components/Add';
+import Add from '../../new-icons/Add';
 import uniqueId from 'lodash/uniqueId';
 
 /**
